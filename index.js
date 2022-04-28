@@ -101,6 +101,9 @@ async function run() {
         res.send(service);
       }
     });
+    app.get("/hero", (req, res) => {
+      req.send("Hit the hero");
+    });
   } finally {
   }
 }
